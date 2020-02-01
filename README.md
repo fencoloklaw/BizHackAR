@@ -11,3 +11,8 @@
 
 4. Fix node_modules
 https://stackoverflow.com/questions/58120990/how-to-resolve-the-error-on-react-native-start/58122821#58122821
+
+5. Run Software
+`npm run start`
+
+6. Hopefully successful
