@@ -14,7 +14,9 @@ import {
   // Added 3d OBj
   ViroAmbientLight,
   Viro3DObject,
-  ViroARCamera
+  ViroARCamera,
+  ViroCamera,
+  ViroARPlaneSelector
 } from 'react-viro';
 
 export default class HelloWorldSceneAR extends Component {
@@ -34,9 +36,11 @@ export default class HelloWorldSceneAR extends Component {
   render() {
     return (
       <ViroARScene onTrackingUpdated={this._onInitialized} >
-        <ViroText text={this.state.text} scale={[.5, .5, .5]} position={[0, 0, -1]} style={styles.helloWorldTextStyle} />
+        {/* <ViroText text={this.state.text} scale={[.5, .5, .5]} position={[0, 0, -1]} style={styles.helloWorldTextStyle} /> */}
         {/* <ViroBox position={[0, -.5, -1]} scale={[.3, .3, .1]} materials={["grid"]} /> */}
         {/* test 3d obj */}
+
+        {/* <ViroCamera position={[0, 0, 0]} rotation={[45, 0, 0]} active={true} /> */}
         <ViroAmbientLight color="#ffffff" />
         <Viro3DObject
           source={require("./res/textures/Lowpoly_Notebook_2.obj")}
@@ -47,15 +51,13 @@ export default class HelloWorldSceneAR extends Component {
           require('./res/textures/Lowpoly_Laptop_Nor_2.jpg'),
           ]}
           highAccuracyEvents={true}
-          position={[0, -.5, -1]}
-          // position={[1, 3, -5]}
-          scale={[.3, .3, .3]}
-          rotation={[0, 0, 90]}
-          dragType="FixedToWorld"
+          position={[0, -1, -1]}
+          scale={[.1, .1, .1]}
+          rotation={[0, 90, 0]}
           type="OBJ"
-          transformBehaviors={["billboard"]} />
-        {/* <ViroARCamera>
-        </ViroARCamera> */}
+          // transformBehaviors={["billboard"]} 
+          />
+
       </ViroARScene>
     );
   }
@@ -70,14 +72,6 @@ export default class HelloWorldSceneAR extends Component {
     }
   }
 
-  _onPinch(pinchState, scaleFactor, source) {
-    if (pinchState == 3) {
-
-      // update scale of obj by multiplying by scaleFactor  when pinch ends.
-      return;
-    }
-    //set scale using native props to reflect pinch.
-  }
 }
 
 var styles = StyleSheet.create({
