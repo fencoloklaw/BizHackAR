@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd Lowpoly_Laptop_1.jpg
+map_Kd Lowpoly_Laptop_2.jpg
 map_Bump  Lowpoly_Laptop_1.jpg
 refl  Ref.jpg
 
@@ -24,5 +24,5 @@ Ni 1.000000
 d 1.000000
 illum 2
 map_Kd Lowpoly_Laptop_2.jpg
-map_Bump  Lowpoly_Laptop_2.jpg
+map_Bump  Lowpoly_Laptop_1.jpg
 refl  Ref.jpg
