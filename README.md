@@ -1,5 +1,7 @@
 # BizHackAR
 
+BizHack 2020 -- Application that displays objects in Augment Reality
+
 1. Clone application into local development
 `git clone https://github.com/fencoloklaw/BizHackAR.git`
 
