@@ -1,6 +1,7 @@
 # BizHackAR
 
 `cd ViroApp`
+
 `npm install`
 
 Fix node_modules:
