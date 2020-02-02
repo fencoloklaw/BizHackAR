@@ -1,4 +1,4 @@
-# BizHackAR
+# BizHackAR - Mobile Application for Android and iOS
 
 BizHack 2020 -- Application that displays objects in Augment Reality
 
